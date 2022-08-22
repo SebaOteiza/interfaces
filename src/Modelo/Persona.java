@@ -10,11 +10,13 @@ public class Persona implements IPersonaje { // LE IMPLEMENTE IPERSONAJE, AL HAC
 	 String rut;
 	 boolean presente;
 	
-
+	 // CONSTRUCTOR VACIO
 	public Persona() {
 		super();
 	}
 
+	
+	//CONSTRUCTOR LLENO 
 	public Persona(String nombre, String rut, boolean presente) {
 		super();
 		this.nombre = nombre;
@@ -22,6 +24,8 @@ public class Persona implements IPersonaje { // LE IMPLEMENTE IPERSONAJE, AL HAC
 		this.presente = presente;
 	}
 
+		//GETTERS AND SETTERS
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -46,6 +50,7 @@ public class Persona implements IPersonaje { // LE IMPLEMENTE IPERSONAJE, AL HAC
 		this.presente = presente;
 	}
 
+	//TO STRING 
 	//el arrobaoverride sobre carga el metodo persona, el TOSTRING
 	@Override
 	public String toString() {
@@ -56,6 +61,8 @@ public class Persona implements IPersonaje { // LE IMPLEMENTE IPERSONAJE, AL HAC
 	//DE AQUI PA ABAJO TRABAJO LOS METODOS DE LA CLASE PERSONA 
 	//ESTOS DOS METODOS ABAJO VIENEN DE INTERFACE 
 	
+	
+	//METODOS IMPORTADOS DE CLASE INTERFACES 
 	@Override
 	public void immprimirHola() {
 		System.out.println("Hola mundo"); 
